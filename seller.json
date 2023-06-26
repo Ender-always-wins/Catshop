@@ -1,1 +1,0 @@
-{"default": {"products": {"apple": {"profit_unit": 10, "cost": 10, "stock": 73, "units_sold": 18}}, "profit": 50}, "Ender": {"products": {"pikachu": {"profit_unit": 30, "cost": 90, "stock": 992, "units_sold": 6}, "demon": {"profit_unit": 20, "cost": 30, "stock": 10, "units_sold": 3}, "rice": {"profit_unit": 30, "cost": 100, "stock": 90, "units_sold": 0}}, "profit": 60}}
