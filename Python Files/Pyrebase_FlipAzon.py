@@ -1,10 +1,8 @@
 from tabulate import tabulate
 import matplotlib.pyplot as plt
 import pyrebase
-import asyncio
 
-async def main():
-    myconfig = {'apiKey': "AIzaSyDN3sMAj-uTrhMe_d1Y9zqdhN1o_XQNTo0",
+myconfig = {'apiKey': "AIzaSyDN3sMAj-uTrhMe_d1Y9zqdhN1o_XQNTo0",
     'authDomain': "flipazon-cd07b.firebaseapp.com",
     'databaseURL': "https://flipazon-cd07b-default-rtdb.asia-southeast1.firebasedatabase.app",
     'projectId': "flipazon-cd07b",
@@ -13,13 +11,9 @@ async def main():
     'appId': "1:142613116213:web:b4f34d78539c3d7e0e487c",
     'measurementId': "G-DZP9ZSNMYB"}
 
-    firebase = pyrebase.initialize_app(myconfig)
+firebase = pyrebase.initialize_app(myconfig)
 
-    db = firebase.database()
-
-    return db
-
-db = asyncio.run(main())
+db = firebase.database()
 
 class Customer:
     def __init__(self, name):
